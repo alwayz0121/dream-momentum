@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header #clock {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 3px #000;
+}
+
+header #weather {
+  color: white;
+  font-size: 18px;
+  text-shadow: 0px 0px 20px #000;
+}

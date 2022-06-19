@@ -1,0 +1,66 @@
+.contents {
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+  margin: 11vh 1vw 0px;
+}
+
+.content-left,
+.content-right {
+  width: 20%;
+}
+
+.content-left {
+  overflow-y: scroll;
+}
+
+/*todo list가 많더라도 스크롤로 내릴 수 있도록*/
+.content-left::-webkit-scrollbar {
+  width: 1px;
+}
+.content-left::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.content-left::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content-left .todo-write {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  padding: 0 1.5vw;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content-left .todo-write::placeholder {
+  font-size: 15px;
+  color: darkgreen;
+}
+
+.content-left ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0.5vh 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.content-left ul li span {
+  font-weight: bold;
+}
+
+.content-left ul li button {
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.01);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}

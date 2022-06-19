@@ -1,0 +1,62 @@
+.content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dream {
+  overflow-y: scroll;
+  width: 100%;
+}
+
+/*todo list가 많더라도 스크롤로 내릴 수 있도록*/
+.dream::-webkit-scrollbar {
+  width: 1px;
+}
+.dream::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dream::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content-right .dream-note {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  padding: 0 1.5vw;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content-right .dream-note::placeholder {
+  font-size: 15px;
+  color: rgb(61, 0, 0);
+}
+
+.content-right ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0.5vh 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.content-right ul li span {
+  font-weight: bold;
+}
+
+.content-right ul li button {
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.01);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}

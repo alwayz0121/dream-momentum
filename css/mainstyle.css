@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Overlock:wght@900&display=swap');
+
+.hidden{
+  display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merienda', cursive;
+}
+
+#container{
+  position: relative;
+  margin: 0;
+  width: auto;
+  height: 100vh;
+}
+
+img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header{
+  position: relative;
+  width: 100%;
+  height: 35%;
+  /* background-color: blue; */
+  display: block;
+}
+
+header #weather{
+  height: 30%;
+  text-align: right;
+  color: white;
+  padding: 5px;
+  font-size: 1.1em;
+  text-shadow: 0 5px 5px #000;
+}
+
+header #clock{
+  height: 70%;
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 3px #000;
+}
+
+#contents{
+  height: 45%;
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+}
+
+#contents input{
+  border: 20x solid lightgray;
+  border-radius: 40px;
+  height: 40px;
+  padding: 0 11px;
+  align-items: center;
+  overflow: hidden;
+  color: darkgray;
+}
+
+footer{
+  width: 100%;
+  height: 20%;
+  /* background-color: palevioletred; */
+}
+
+footer #quote{
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  width: 100%;
+}
+
+#quote span:first-child{
+  height: 70%;
+  font-size: 1em;
+  display: block;
+  padding-top: 5%;
+}
+
+#quote span:last-child{
+  height: 25%;
+  font-size: 0.9em;
+  display: block;
+  padding-top: 5%;
+}

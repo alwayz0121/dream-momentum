@@ -1,0 +1,66 @@
+.login {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 350px;
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2vh;
+  letter-spacing: 1.5px;
+}
+
+.login-form::placeholder {
+  color: darkgreen;
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-form:focus {
+  outline: none;
+  color: rgb(61, 13, 13);
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-submit {
+  width: 70px;
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1.5px;
+}
+
+.sayhello {
+  position: absolute;
+  width: 50%;
+}
+
+.sayhello #greeting {
+  font-size: 18px;
+}
+
+#retry {
+  width: 70px;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1.5px;
+}
+.login-submit:hover,
+#retry:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
