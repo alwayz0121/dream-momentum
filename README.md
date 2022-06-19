@@ -13,7 +13,8 @@
 # 구성요소
 
 ✅ Dream Note, To do list
-: local Storage를 이용해, 입력하고 화면을 닫아도 그대로 남아있습니다. </br>
+: local Storage를 이용해, 입력하고 화면을 닫아도 그대로 남아있습니다.
+: overflow-y: scroll을 이용해, 할 일 갯수를 제한하지 않고 작성하도록 했습니다! (넘쳐나는 할 일만큼 성장하는 드림 모멘텀🤓) <br>
 ✅ Clock
 : 1초씩 실시간으로 시간이 제공됩니다. </br>
 ✅ Random background, quote, menu
