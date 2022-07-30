@@ -60,3 +60,15 @@
   background-color: rgba(0, 0, 0, 0.01);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
+/*태블릿 크기*/
+@media (max-width: 768px) {
+  .content-right {
+    display: block;
+  }
+  .content-right .music {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+}
