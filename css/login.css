@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .login-form {
@@ -39,6 +40,7 @@
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   letter-spacing: 1.5px;
+  transition: all 0.5s;
 }
 
 .sayhello {
@@ -58,9 +60,55 @@
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   letter-spacing: 1.5px;
+  transition: all 0.5s;
 }
 .login-submit:hover,
 #retry:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+/*태블릿 크기*/
+@media (max-width: 768px) {
+  .login {
+    margin-top: 40px;
+  }
+
+  .login-form {
+    width: 200px;
+    letter-spacing: 0px;
+  }
+
+  .login-form::placeholder {
+    font-size: 13px;
+  }
+
+  .login-form:focus {
+    font-size: 13px;
+  }
+
+  .login-submit {
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+  }
+
+  .sayhello {
+    position: absolute;
+    top: 80px;
+    width: 70%;
+  }
+
+  #retry {
+    width: 65px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+  }
+  .login-submit:hover,
+  #retry:hover {
+    transform: none;
+  }
 }

@@ -28,3 +28,10 @@
   font-size: 14px;
   line-height: normal;
 }
+
+/*태블릿 크기*/
+@media (max-width: 768px) {
+  .randomMenu {
+    display: none;
+  }
+}
